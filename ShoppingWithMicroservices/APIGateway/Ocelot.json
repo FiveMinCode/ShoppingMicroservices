@@ -1,0 +1,31 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Products/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44364"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Products/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "SwaggerKey": "Products"
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "Products",
+      "Config": [
+        {
+          "Name": "Products API",
+          "Version": "V1",
+          "Url": "https://localhost:44364/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ],
+  "GlobalConfiguration": {
+  }
+}
